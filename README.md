@@ -1,12 +1,38 @@
-- 👋 Hi, I’m @satya-business-website
-- 👀 I’m interested in ...
-- 🌱 I’m currently learning ...
-- 💞️ I’m looking to collaborate on ...
-- 📫 How to reach me ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
+<!-- Add this inside the <head> -->
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    animation: fadeIn 2s ease-in;
+  }
 
-<!---
-satya-business-website/satya-business-website is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-You can click the Preview link to take a look at your changes.
---->
+  @keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+  }
+
+  section {
+    animation: slideUp 1.5s ease;
+  }
+
+  @keyframes slideUp {
+    from {
+      transform: translateY(30px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0px);
+      opacity: 1;
+    }
+  }
+
+  nav a {
+    transition: background-color 0.3s ease;
+  }
+
+  nav a:hover {
+    background-color: #575757;
+    transform: scale(1.1);
+  }
+</style>
